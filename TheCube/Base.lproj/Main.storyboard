@@ -33,7 +33,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-tz-8Y3">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.5" maxValue="3.5" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-tz-8Y3">
                                                         <rect key="frame" x="58" y="0.0" width="299" height="31"/>
                                                         <connections>
                                                             <action selector="sideChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IVO-La-cVs"/>
@@ -55,10 +55,10 @@
                                                         <real key="value" value="150"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
-                                                        <real key="value" value="100"/>
+                                                        <real key="value" value="30"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
-                                                        <real key="value" value="3"/>
+                                                        <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
@@ -67,13 +67,13 @@
                                                 <color key="backgroundColor" red="0.85700326490000001" green="1" blue="0.091063309829999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="resolution">
                                                         <real key="value" value="150"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
-                                                        <real key="value" value="5"/>
+                                                        <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
@@ -85,7 +85,10 @@
                                                         <real key="value" value="100"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
-                                                        <real key="value" value="5"/>
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                        <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
@@ -110,7 +113,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-bT-a4z">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-bT-a4z">
                                                         <rect key="frame" x="48" y="0.0" width="319" height="31"/>
                                                         <connections>
                                                             <action selector="timeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8gb-52-c2w"/>
@@ -129,7 +132,7 @@
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
-                                                        <real key="value" value="50"/>
+                                                        <real key="value" value="70"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
                                                         <real key="value" value="30"/>

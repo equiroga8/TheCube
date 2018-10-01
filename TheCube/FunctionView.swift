@@ -89,7 +89,7 @@ class FunctionView: UIView {
         drawTicks(width, height)
         drawTexts(width, height)
         drawTrayectory()
-        //drawPOI()
+        drawPOI()
     }
     
     private func drawAxis(_ width: CGFloat,_ height: CGFloat){
@@ -183,7 +183,7 @@ class FunctionView: UIView {
             let py = pointForY(p.y)
             
             let path = UIBezierPath(ovalIn: CGRect(x: px - 4, y: py - 4, width: 8, height: 8))
-            UIColor.red.set()
+            UIColor.black.set()
             path.stroke()
             path.fill()
         }

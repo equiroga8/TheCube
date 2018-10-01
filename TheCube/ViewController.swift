@@ -35,52 +35,27 @@ class ViewController: UIViewController, ParametricFunctionViewDataSource {
     }
     
     func startIndexFor(_ functionView: FunctionView) -> Double {
-        switch functionView {
-        case displacementTimeFuncView:
-            return 0
-        case speedTimeFuncView:
-            return 0
-        case accelerationTimeFuncVIew:
-            return 0
-        case speedPositionFuncView:
-            return 0
-        default:
-            return 0
-        }
+        return 0
         
     }
     
     func endIndexFor(_ functionView: FunctionView) -> Double {
-        switch functionView {
-        case displacementTimeFuncView:
-            return 220
-        case speedTimeFuncView:
-            return 220
-        case accelerationTimeFuncVIew:
-            return 220
-        case speedPositionFuncView:
-            return 220
-        default:
-            return 1000
-        }
+        return 10
     }
     
     func functionView(_ functionView: FunctionView, pointAt index: Double) -> FunctionPoint {
+        let time = index
         switch functionView {
         case displacementTimeFuncView:
-            let time = index
             let z = cubeModel.positionTimeFunc(side: Double(sideSlider.value), time: time)
             return FunctionPoint(x: time, y: z)
         case speedTimeFuncView:
-            let time = index
             let v = cubeModel.speedTimeFunc(side: Double(sideSlider.value), time: time)
             return FunctionPoint(x: time, y: v)
         case accelerationTimeFuncVIew:
-            let time = index
             let a = cubeModel.accelerationTimeFunc(side: Double(sideSlider.value), time: time)
             return FunctionPoint(x: time, y: a)
         case speedPositionFuncView:
-            let time = index
             let z = cubeModel.positionTimeFunc(side: Double(sideSlider.value), time: time)
             let v = cubeModel.speedTimeFunc(side: Double(sideSlider.value), time: time)
             return FunctionPoint(x: z, y: v)
@@ -90,15 +65,21 @@ class ViewController: UIViewController, ParametricFunctionViewDataSource {
     }
     
     func pointsOfInterestFor(_ functionView: FunctionView) -> [FunctionPoint] {
+        let time = Double(timeSlider.value)
         switch functionView {
         case displacementTimeFuncView:
-            return [FunctionPoint(x:0,y:0)]
+            let z = cubeModel.positionTimeFunc(side: Double(sideSlider.value), time: time)
+            return [FunctionPoint(x: time, y: z)]
         case speedTimeFuncView:
-            return [FunctionPoint(x:0,y:0)]
+            let v = cubeModel.speedTimeFunc(side: Double(sideSlider.value), time: time)
+            return [FunctionPoint(x: time, y: v)]
         case accelerationTimeFuncVIew:
-            return [FunctionPoint(x:0,y:0)]
+            let a = cubeModel.accelerationTimeFunc(side: Double(sideSlider.value), time: time)
+            return [FunctionPoint(x: time, y: a)]
         case speedPositionFuncView:
-            return [FunctionPoint(x:0,y:0)]
+            let z = cubeModel.positionTimeFunc(side: Double(sideSlider.value), time: time)
+            let v = cubeModel.speedTimeFunc(side: Double(sideSlider.value), time: time)
+            return [FunctionPoint(x: z, y: v)]
         default:
             return [FunctionPoint(x:0,y:0)]
         }
